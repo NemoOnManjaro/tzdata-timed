@@ -3,12 +3,13 @@
 
 pkgname=tzdata-timed
 pkgver=2021a+git1
-pkgrel=1
+pkgrel=2
 pkgdesc="Data files for the time daemon, timed"
 arch=('x86_64' 'aarch64')
 url="https://github.com/sailfishos/tzdata-timed"
 license=('Public Domain')
 depends=('tzdata')
+makedepends=('pcre')
 source=("${url}/archive/refs/tags/$pkgver.tar.gz"
 	"0001-Fixes-build.patch")
 sha256sums=('5f3249f44bd35b0302e495421a116dee1123838c70852dad165c780a14edbf0e'
